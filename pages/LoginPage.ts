@@ -8,7 +8,7 @@ let credentials: { ValidLogin: { ValidUserName: string; ValidPassword: string } 
 
 
 try {
- const rawData = fs.readFileSync('./src/Data/loginData.json', 'utf-8');
+ const rawData = fs.readFileSync('./Data/loginData.json', 'utf-8');
  credentials = JSON.parse(rawData);
 } catch (error) {
  throw new Error(`Failed to load credentials.json: ${(error as Error).message}`);

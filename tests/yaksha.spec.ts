@@ -1,17 +1,17 @@
 import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
-import AppointmentPage from "../../pages/AppointmentPage.js";
-import UtilitiesPage from "../../pages/UtilitiesPage.js";
-import DispensaryPage from "../../pages/DispensaryPage.js";
-import { LoginPage } from "../../pages/LoginPage.js";
-import ProcurementPage from "../../pages/ProcurementPage.js";
-import PatientPage from "../../pages/PatientPage.js";
-import ADTPage from "../../pages/ADTPage.js";
-import RadiologyPage from "../../pages/RadiologyPage.js";
-import LaboratoryPage from "../../pages/LaboratoryPage.js";
-import { PatientSearchHelper } from "../reusableMethod.js";
-import testData from "../../Data/patientNames.json" with { type: 'json' };
-import { SettingsPage } from "../../pages/SettingsPage.js";
+import AppointmentPage from "../pages/AppointmentPage.js";
+import UtilitiesPage from "../pages/UtilitiesPage.js";
+import DispensaryPage from "../pages/DispensaryPage.js";
+import { LoginPage } from "../pages/LoginPage.js";
+import ProcurementPage from "../pages/ProcurementPage.js";
+import PatientPage from "../pages/PatientPage.js";
+import ADTPage from "../pages/ADTPage.js";
+import RadiologyPage from "../pages/RadiologyPage.js";
+import LaboratoryPage from "../pages/LaboratoryPage.js";
+import { PatientSearchHelper } from "./reusableMethod.js";
+import testData from "../Data/patientNames.json" with { type: 'json' };
+import { SettingsPage } from "../pages/SettingsPage.js";
 
 
 test.describe("Yaksha", () => {
