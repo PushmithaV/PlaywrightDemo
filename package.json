@@ -1,0 +1,39 @@
+{
+ "name": "playwrights",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+   "test": "playwright test",
+   "test:headed": "playwright test smoke-tests/smoke.spec.ts --headed",
+   "test:chromium": "playwright test --project=chromium",
+   "test:firefox": "playwright test --project=firfox",
+   "test:webkit": "playwright test --project=webkit",
+   "test:smoke": "playwright test --grep @smoke",
+   "test:regression": "playwright test --grep @regression",
+   "test:debug": "playwright test --debug",
+   "test:report": "playwright test --reporter=html",
+   "allure:reportgeneration": "allure generate allure-results -o allure-report --clean",
+   "openallurereports": "allure open allure-report"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "type": "module",
+ "devDependencies": {
+   "@playwright/test": "^1.60.0",
+   "@types/node": "^25.9.1",
+   "@typescript-eslint/eslint-plugin": "^8.59.4",
+   "@typescript-eslint/parser": "^8.59.4",
+   "allure-playwright": "^3.9.0",
+   "csv-parse": "^6.2.1",
+   "eslint": "^10.4.0",
+   "eslint-plugin-playwright": "^2.10.4"
+ },
+ "dependencies": {
+   "xlsx": "^0.18.5"
+ }
+}
+
+
+
